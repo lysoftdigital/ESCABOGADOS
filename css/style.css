@@ -440,22 +440,22 @@ h1, h2, h3, h4, h5, h6, figure {
 .colorlib-bg-section {
   background: rgba(0, 0, 0, 0.05); }
 
-#colorlib-about,
-#colorlib-practice,
+#colorlib-descubre,
+#colorlib-areas,
 #colorlib-testimonial,
 #colorlib-started,
 #colorlib-blog,
-#colorlib-contact,
+#colorlib-contacto,
 #colorlib-footer {
   padding: 7em 0;
   clear: both; }
   @media screen and (max-width: 768px) {
-    #colorlib-about,
-    #colorlib-practice,
+    #colorlib-descubre,
+    #colorlib-areas,
     #colorlib-testimonial,
     #colorlib-started,
     #colorlib-blog,
-    #colorlib-contact,
+    #colorlib-contacto,
     #colorlib-footer {
       padding: 3em 0; } }
 
@@ -671,15 +671,15 @@ h1, h2, h3, h4, h5, h6, figure {
       .colorlib-social-icons li a i {
         font-size: 20px; }
 
-.colorlib-contact-info ul {
+.colorlib-contacto-info ul {
   padding: 0;
   margin: 0; }
-  .colorlib-contact-info ul li {
+  .colorlib-contacto-info ul li {
     padding: 0 0 0 40px;
     margin: 0 0 30px 0;
     list-style: none;
     position: relative; }
-    .colorlib-contact-info ul li:before {
+    .colorlib-contacto-info ul li:before {
       color: #d6a400;;
       position: absolute;
       left: 0;
@@ -694,16 +694,16 @@ h1, h2, h3, h4, h5, h6, figure {
       /* Better Font Rendering =========== */
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale; }
-    .colorlib-contact-info ul li.address:before {
+    .colorlib-contacto-info ul li.address:before {
       font-size: 30px;
       content: "\e9d1"; }
-    .colorlib-contact-info ul li.phone:before {
+    .colorlib-contacto-info ul li.phone:before {
       font-size: 23px;
       content: "\e9f4"; }
-    .colorlib-contact-info ul li.email:before {
+    .colorlib-contacto-info ul li.email:before {
       font-size: 23px;
       content: "\e9da"; }
-    .colorlib-contact-info ul li.url:before {
+    .colorlib-contacto-info ul li.url:before {
       font-size: 23px;
       content: "\e9af"; }
 
