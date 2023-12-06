@@ -134,7 +134,7 @@ output {
 
   // Disabled and read-only inputs
   //
-  // HTML5 says that controls under a fieldset > legend:first-child won't be
+  // HTML5 says that controls under a fieldset > legend:first-child empresas't be
   // disabled if the fieldset is disabled. Due to implementation difficulty, we
   // don't honor that edge case; we style them as disabled anyway.
   &[disabled],
