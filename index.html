@@ -67,6 +67,20 @@
                 display: none; /* Oculta el elemento h2 con la clase específica */
             }
         }
+
+		#colorlib-descubre .colorlib-staff {
+            overflow: hidden;
+            position: relative;
+        }
+
+        #colorlib-descubre .colorlib-staff img {
+            transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+        }
+
+        #colorlib-descubre .colorlib-staff:hover img {
+            transform: scale(1.1);
+            filter: brightness(1.1);
+        }
     </style>
 	</head>
 	<body>
@@ -318,7 +332,7 @@
 					<div class="colorlib-staff">
 						<img src="images/3.png" alt="Template">
 						<h3>ISABEL ROMERO COTRINAS</h3>
-						<strong class="role">Abogada</strong>
+						<strong class="role">Procuradora</strong>
 						<p>Procuradora Judicial de ESTUDIO SILVA CARDENAS ABOGADOS S.A.</p>
 					</div>
 				</div>
@@ -326,7 +340,7 @@
 					<div class="colorlib-staff">
 						<img src="images/4.png" alt="Template">
 						<h3>LUIS <br>SIFUENTES</h3>
-						<strong class="role">Abogado</strong>
+						<strong class="role">Procurador</strong>
 						<p>Procurador Judicial de ESTUDIO SILVA CARDENAS ABOGADOS S.A.</p>
 					</div>
 				</div>
@@ -400,9 +414,9 @@
 						<div class="owl-carousel owl-carousel-fullwidth">
 							<div class="item">
 								<div class="testimony-slide active text-center">
-									<!-- <figure> -->
-										<!-- <img src="images/abogado1.png" alt="user"> -->
-									<!-- </figure> -->
+									<figure>
+										<img src="images/cliente.png" alt="user">
+									</figure>
 									<!-- <span>Juan Torres <a href="#" class="twitter">- Lima</a></span> -->
 									<blockquote>
 										<p>"Contratar a Edwin Silva Cárdenas como mi abogado fue la mejor decisión que pude haber tomado. Su experiencia en el campo legal es impresionante, y su capacidad para comunicar asuntos legales de manera comprensible me dejó tranquilo durante todo el proceso. Gracias a su dedicación, resolvimos mi caso de una manera que no habría creído posible".</p>
@@ -411,10 +425,9 @@
 							</div>
 							<div class="item">
 								<div class="testimony-slide active text-center">
-									<!-- <figure>
-										<img src="images/abogado2.png" alt="user">
+									<figure>
+										<img src="images/cliente.png" alt="user">
 									</figure>
-									<span>Pedro López <a href="#" class="twitter">- Ayacucho</a></span> -->
 									<blockquote>
 										<p>"Estoy muy agradecida por la dedicación y el conocimiento del abogado Edwin. No solo resolvió mi caso de manera exitosa, sino que también me guió a lo largo de todo el proceso, explicándome cada paso con paciencia. Siempre me sentí respaldada y bien asesorada. ¡Altamente recomendado!"</p>
 									</blockquote>
@@ -422,10 +435,9 @@
 							</div>
 							<div class="item">
 								<div class="testimony-slide active text-center">
-									<!-- <figure>
-										<img src="images/abogado3.png" alt="user">
+									<figure>
+										<img src="images/cliente.png" alt="user">
 									</figure>
-									<span>Reyna Ayala<a href="#" class="twitter">- Huánuco</a></span> -->
 									<blockquote>
 										<p>"El profesionalismo y el compromiso de Edwin Silva son excepcionales. No solo luchó incansablemente por mis derechos legales, sino que también me mantuvo informada y al tanto de los avances en mi caso. Su empatía y atención a los detalles marcan la diferencia. Si buscas un abogado excepcional, Edwin Silva es la elección perfecta".</p>
 									</blockquote>
@@ -473,60 +485,80 @@
 		</div>
 	</div>
 	<div id="colorlib-descubre">
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center colorlib-heading">
-					<h2>Entidades del Gobierrno</h2>
-					<p>Visita las entidades del estado y descubre las últimas novedades.</p>
-				</div>
-			</div>
+        <div class="container">
+            <div class="row animate-box">
+                <div class="col-md-8 col-md-offset-2 text-center colorlib-heading">
+                    <h2>Entidades del Gobierno</h2>
+                    <p>Visita las entidades del estado y descubre las últimas novedades.</p>
+                </div>
+            </div>
 
-			<div class="row">
-				<div class="col-md-3 col-sm-4 text-center animate-box" data-animate-effect="fadeIn">
-					<div class="colorlib-staff">
-						<a href="https://www.pj.gob.pe/wps/wcm/connect/CorteSuprema/s_cortes_suprema_home/as_Inicio/" target="_blank">
-							<img src="images/1.png" alt="Template">
-						</a>
-						<h3>PODER JUDICIAL</h3>
+            <div class="row">
+                <div class="col-md-3 col-sm-4 text-center animate-box"
+                     data-animate-effect="fadeIn"
+                     onmouseover="enlargeImage(this)"
+                     onmouseout="resetImage(this)">
+                    <div class="colorlib-staff">
+                        <a href="https://www.pj.gob.pe/wps/wcm/connect/CorteSuprema/s_cortes_suprema_home/as_Inicio/" target="_blank">
+                            <img src="images/poder.png" alt="Template" style="width: 100%;">
+                        </a>
+                        <h3>PODER JUDICIAL</h3>
+                    </div>
+                </div>
 
-					</div>
-				</div>
-		
-				<!-- Repeat the above structure for other staff members -->
-		
-				<div class="col-md-3 col-sm-4 text-center animate-box" data-animate-effect="fadeIn">
-					<div class="colorlib-staff">
-						<a href="https://www.gob.pe/mpfn" target="_blank">
-							<img src="images/2.png" alt="Template">
-						</a>
-						<h3>MINISTERIO PÚBLICO</h3>
+                <!-- Repite la estructura anterior para otros miembros del personal -->
 
-					</div>
-				</div>
-		
-				<div class="col-md-3 col-sm-4 text-center animate-box" data-animate-effect="fadeIn">
-					<div class="colorlib-staff">
-						<a href="https://www.gob.pe/mininter" target="_blank">
-							<img src="images/3.png" alt="Template">
-						</a>
-						<h3>MINISTERIO DEL INTERIOR</h3>
+                <div class="col-md-3 col-sm-4 text-center animate-box"
+                     data-animate-effect="fadeIn"
+                     onmouseover="enlargeImage(this)"
+                     onmouseout="resetImage(this)">
+                    <div class="colorlib-staff">
+                        <a href="https://www.gob.pe/mpfn" target="_blank">
+                            <img src="images/publico.png" alt="Template" style="width: 100%;">
+                        </a>
+                        <h3>MINISTERIO PÚBLICO</h3>
+                    </div>
+                </div>
 
-					</div>
-				</div>
-		
-				<div class="col-md-3 col-sm-4 text-center animate-box" data-animate-effect="fadeIn">
-					<div class="colorlib-staff">
-						<a href="https://www.gob.pe/sunarp" target="_blank">
-							<img src="images/4.png" alt="Template">
-						</a>
-						<h3>SUNARP</h3>
+                <div class="col-md-3 col-sm-4 text-center animate-box"
+                     data-animate-effect="fadeIn"
+                     onmouseover="enlargeImage(this)"
+                     onmouseout="resetImage(this)">
+                    <div class="colorlib-staff">
+                        <a href="https://www.gob.pe/mininter" target="_blank">
+                            <img src="images/interior.png" alt="Template" style="width: 100%;">
+                        </a>
+                        <h3>MINISTERIO DEL INTERIOR</h3>
+                    </div>
+                </div>
 
-					</div>
-				</div>
-			</div>
-			
+                <div class="col-md-3 col-sm-4 text-center animate-box"
+                     data-animate-effect="fadeIn"
+                     onmouseover="enlargeImage(this)"
+                     onmouseout="resetImage(this)">
+                    <div class="colorlib-staff">
+                        <a href="https://www.gob.pe/sunarp" target="_blank">
+                            <img src="images/sunarp.png" alt="Template" style="width: 100%;">
+                        </a>
+                        <h3>SUNARP</h3>
+                    </div>
+                </div>
 
-		</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function enlargeImage(element) {
+            element.querySelector('img').style.transform = 'scale(1.1)';
+            element.querySelector('img').style.filter = 'brightness(1.1)';
+        }
+
+        function resetImage(element) {
+            element.querySelector('img').style.transform = 'scale(1)';
+            element.querySelector('img').style.filter = 'brightness(1)';
+        }
+    </script>
 	</div>
 	<footer id="colorlib-footer" role="contentinfo">
 		<div class="container">
